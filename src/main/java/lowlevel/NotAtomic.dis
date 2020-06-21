@@ -1,0 +1,76 @@
+Classfile /D:/IdeaProject/OnJava8/src/main/java/lowlevel/NotAtomic.class
+  Last modified 2020-6-8; size 343 bytes
+  MD5 checksum a2fd2ae1701ddc70352ca0473442a13f
+  Compiled from "NotAtomic.java"
+public class lowlevel.NotAtomic
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #4.#15         // java/lang/Object."<init>":()V
+   #2 = Fieldref           #3.#16         // lowlevel/NotAtomic.i:I
+   #3 = Class              #17            // lowlevel/NotAtomic
+   #4 = Class              #18            // java/lang/Object
+   #5 = Utf8               i
+   #6 = Utf8               I
+   #7 = Utf8               <init>
+   #8 = Utf8               ()V
+   #9 = Utf8               Code
+  #10 = Utf8               LineNumberTable
+  #11 = Utf8               f1
+  #12 = Utf8               f2
+  #13 = Utf8               SourceFile
+  #14 = Utf8               NotAtomic.java
+  #15 = NameAndType        #7:#8          // "<init>":()V
+  #16 = NameAndType        #5:#6          // i:I
+  #17 = Utf8               lowlevel/NotAtomic
+  #18 = Utf8               java/lang/Object
+{
+  int i;
+    descriptor: I
+    flags:
+
+  public lowlevel.NotAtomic();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 7: 0
+
+  void f1();
+    descriptor: ()V
+    flags:
+    Code:
+      stack=3, locals=1, args_size=1
+         0: aload_0
+         1: dup
+         2: getfield      #2                  // Field i:I
+         5: iconst_1
+         6: iadd
+         7: putfield      #2                  // Field i:I
+        10: return
+      LineNumberTable:
+        line 10: 0
+        line 11: 10
+
+  void f2();
+    descriptor: ()V
+    flags:
+    Code:
+      stack=3, locals=1, args_size=1
+         0: aload_0
+         1: dup
+         2: getfield      #2                  // Field i:I
+         5: iconst_3
+         6: iadd
+         7: putfield      #2                  // Field i:I
+        10: return
+      LineNumberTable:
+        line 13: 0
+        line 14: 10
+}
+SourceFile: "NotAtomic.java"
